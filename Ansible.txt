@@ -1,0 +1,33 @@
+Configuration Management:
+=========================
+	This is the process of remotly configuting servers present at different zeograficall location form one point of time
+
+Advantages :
+============
+	provisioning of servers
+		configutig management tools can used for indsatlling applications updating patches unistalling applications etc...
+	Creating replyca environments:
+		during disaster recovery when there is possibilty that entair data center could be lost due to natural calamity, war etc...
+		we can create replyca data centter easly using configutigmanagement tools
+	Handling snow flack
+		over period of time each server present in a data center will start behaving like snow fleck that is is might be running on slitly diffarent h/w and s/w configuraton
+		configuraton management tool can capture the setup information of these servers which can be used later for creating similer environments
+	idempotent:
+		configuration management tools are used to bring the remote servers to a particuler stage called as desired stage if remote servers is already desired stage 
+		configuration management tools will not reconfigure that server 
+
+populer configuration management tools:
+=======================================
+	Ansible
+	chef
+	puppet
+	salttalk
+	
+Ansible :
+=========
+	ansible is an open source configuration management tool which is created using pythone tha main machine where ansible is installed called as controller
+	The remote machine that we want configure called as managed nodes or managed hosts
+	the pre condition for ansible is password less SSH should be establised b/w the controller and managed note and all the machine should pythone installed.
+	
+	
+		
